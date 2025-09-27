@@ -21,6 +21,8 @@ Bundler
 
 ```
 git clone https://github.com/saki53/memo-app.git
+# マージ前ならdevelopをクローン
+git clone -b develop https://github.com/saki53/memo-app.git
 cd memo-app
 ```
 

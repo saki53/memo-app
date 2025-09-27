@@ -157,7 +157,6 @@ PLATFORMS
 
 DEPENDENCIES
   erb_lint
-  json
   rackup
   rubocop-fjord
   sinatra
