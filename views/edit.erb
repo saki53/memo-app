@@ -1,0 +1,14 @@
+<h2>メモの編集</h2>
+
+<form action="/memos/<%= @memo.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+
+  <label for="title">タイトル</label>
+  <input type="text" id="title" name="title" value="<%= h(@memo.title) %>" required>
+
+  <label for="content">詳細</label>
+  <textarea id="content" name="content" rows="10"><%= h(@memo.content) %></textarea>
+
+  <button type="submit">編集</button>
+  <a href="/memos/<%= @memo.id %>">キャンセル</a>
+</form>
